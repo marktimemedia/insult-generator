@@ -1,0 +1,8 @@
+// Used in _grid.scss and _grid-classes.scss to determine the number of columns to output CSS for.
+$nbrOfColumns: 12;
+$largeBreakpoint: 64em;
+
+// Flexbox
+// Used to define legacy flexbox support
+$flexboxSupportIE10: true;
+$flexboxSupportLegacy: true;

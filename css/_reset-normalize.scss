@@ -1,0 +1,598 @@
+/*
+  ---- ---- ---- ---- RESET STYLESHEET ---- ---- ---- ----
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+    margin:0;
+}
+
+audio[controls], canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing:border-box;
+    word-wrap: break-word;
+}
+
+/*
+  ---- ---- ---- ---- ALL VIEWPORTS AND SIZES ---- ---- ---- ----
+*/
+/* BODY */
+@-webkit-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: $Nlightest;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    line-height: $baselineHeight;
+    color: $textColor;
+    letter-spacing: $baseLetterSpace;
+    font-weight: $baseFontWeight;
+}
+
+p {
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    line-height: $baselineHeight;
+    color: $textColor;
+    letter-spacing: $baseLetterSpace;
+    font-weight: $baseFontWeight;
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+/* LINKS */
+a {
+    color: $linkColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+        color: $linkHover;
+        text-decoration: none;
+        border: 0;
+        outline: 0;
+    }
+
+    // &:visited {
+    //     color: $linkVisited;
+    //     color: $linkVisited;
+    // }
+
+    &:focus,
+    &:active {
+        color: $linkFocus;
+        border: 0;
+        outline: 0;
+    }
+
+    img {
+        border: 0;
+        outline: 0;
+    }
+}
+
+strong a {
+    font-weight:  bold;
+}
+
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: $headingFont;
+    line-height: $headingLineHeight;
+    text-rendering:  optimizeLegibility;
+    text-shadow: $headingTextShadow;
+    letter-spacing: $headingLetterSpace;
+
+    * {
+        line-height: $headingLineHeight;
+    }
+}
+
+h1,
+.h1 {
+    margin-bottom: $baselineHeight / 3;
+    color: $h1Color;
+    @include rem-px('font-size', $h1Size);
+    font-weight: $h1FontWeight;
+
+    a {
+        font-weight: $h1FontWeight;
+    }
+}
+
+h2,
+.h2 {
+    margin-bottom: $baselineHeight / 2.5;
+    color: $h2Color;
+    @include rem-px('font-size', $h2Size);
+    font-weight: $h2FontWeight;
+
+    a {
+        font-weight: $h2FontWeight;
+    }
+}
+
+h3,
+.h3 {
+    margin-bottom: $baselineHeight / 2;
+    color: $h3Color;
+    @include rem-px('font-size', $h3Size);
+    font-weight: $h3FontWeight;
+
+    a {
+        font-weight: $h3FontWeight;
+    }
+}
+
+h4,
+.h4 {
+    margin-bottom: $baselineHeight / 1.75;
+    color: $h4Color;
+    @include rem-px('font-size', $h4Size);
+    font-weight: $h4FontWeight;
+
+    a {
+        font-weight: $h4FontWeight;
+    }
+}
+
+h5,
+.h5 {
+    margin-bottom: $baselineHeight / 1.4;
+    color: $h5Color;
+    @include rem-px('font-size', $h5Size);
+    font-weight: $h5FontWeight;
+
+    a {
+        font-weight: $h5FontWeight;
+    }
+}
+
+h6,
+.h6 {
+    margin-bottom: $baselineHeight / 1.2;
+    color: $h6Size;
+    @include rem-px('font-size', $h6Size);
+
+    a {
+        font-weight: $h6FontWeight;
+    }
+}
+
+ol,
+ul,
+dl {
+    margin-bottom: $baselineHeight;
+    line-height: $baselineHeight * 1.25;
+}
+
+p,
+address {
+    margin-bottom: $baselineHeight / 2;
+    line-height: $baselineHeight * 1.25;
+}
+
+small {
+    font-size: .875em;
+}
+
+ul,
+ol {
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    color: $textColor;
+    letter-spacing: $baseLetterSpace;
+    margin-left: 1em;
+    padding: 0 0 0 $gutter;
+
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+    li {
+        line-height: $baselineHeight;
+        font-weight: $baseFontWeight;
+        margin: .25em 0;
+    }
+
+blockquote {
+    @include rem-px('margin-bottom', $blockquoteMarginBottom);
+    padding-left: $blockquotePaddingLeft;
+    border-left: $blockquoteBorderWidth $blockquoteBorderStyle $blockquoteBorderColor;
+    color: $blockquoteColor;
+    font-family: $blockquoteFontFamily;
+    @include rem-px('font-size', $blockquoteFontSize);
+    font-style: $blockquoteFontStyle;
+    font-weight: $blockquoteFontWeight;
+    line-height: 1.3em;
+
+    * {
+        font-family: $blockquoteFontFamily;
+        @include rem-px('font-size', $blockquoteFontSize);
+        font-style: $blockquoteFontStyle;
+        font-weight: $blockquoteFontWeight;
+    }
+}
+
+dl,
+dd {
+    margin-bottom: $baselineHeight / 2;
+}
+
+dt {
+    font-weight: bold;
+}
+
+b,
+strong {
+    font-weight:  bold;
+
+    a {
+        font-weight: bold;
+    }
+}
+
+i,
+dfn,
+em {
+    font-style: italic;
+
+	a {
+		font-style: italic;
+	}
+}
+
+u {
+    text-decoration: underline;
+}
+
+ins {
+    background-color: $Nlighter;
+    color: $warningColor;
+    text-decoration: none;
+}
+
+mark {
+    background-color: $Nlighter;
+    color: $warningColor;
+    font-style: italic;
+    font-weight: bold;
+}
+
+pre,
+code,
+kdb,
+samp {
+    display: block;
+    margin: $codeMargin;
+    padding: $codePadding;
+    background-color: $codeBackground;
+    border: $codeBorder;
+    font-family: $codeFontFamily;
+    font-size: $codeFontSize;
+    color: $codeColor;
+    line-height: $baselineHeight;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: .75em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+
+/* SELECTION */
+::-moz-selection {
+    background-color: $Nlighter;
+    color: $Nlightest;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $Nlighter;
+    color: $Nlightest;
+    text-shadow: none;
+}
+
+/* ELEMENTS */
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    background-color: $Nlighter;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+figure {
+    margin-bottom: $baselineHeight;
+}
+
+figcaption {
+    display: block;
+    margin: .25em 0 0 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* FORMS */
+label {
+    font-size: $labelFontSize;
+    color: $labelColor;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="file"],
+input[type="password"],
+select,
+textarea,
+.textbox {
+    display: block;
+    width: 100%;
+    max-width: $textboxMaxWidth;
+    padding: $textboxPadding;
+    margin-bottom: $baselineHeight;
+    background-color: $textboxBackground;
+    border: $textboxBorderWidth $textboxBorderStyle $textboxBorderColor;
+    color: $textboxColor;
+    font-size: .875em;
+
+    &:active,
+    &:focus {
+        outline-color: $textboxBorderColorActive;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 3px 0;
+    padding: 0;
+    *width: 13px;
+    *height: 13px;
+}
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	display: inline-block;
+    width: auto;
+    height: auto;
+    padding: $buttonPadding;
+    //background-color: $buttonBackground;
+    @include vertical($buttonBackground, $buttonBackground2);
+    border: 0;
+    border-bottom: $buttonBorderWidth $buttonBorderStyle $buttonBorderColor;
+    color: $buttonColor;
+    font-family: $buttonFont;
+    font-size: $buttonFontSize;
+    font-weight: $buttonFontWeight;
+    cursor: pointer;
+
+    &:hover {
+        @include vertical($buttonBackground2, $buttonBackground);
+    }
+
+    &.alt {
+        @include vertical($buttonAltBackground, $buttonAltBackground2);
+
+        &:hover {
+            @include vertical($buttonAltBackground2, $buttonAltBackground);
+        }
+    }
+
+    &:active,
+    &:focus {
+        
+        outline-color: $buttonOutlineColor;
+    }
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+    @include opacity(.5);
+    cursor: not-allowed;
+}
+
+::-webkit-input-placeholder {
+	color: $textboxPlaceholderColor;
+	font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
+}
+
+:-moz-placeholder {
+	color: $textboxPlaceholderColor;
+	font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
+}
+
+:-ms-input-placeholder {
+    color: $textboxPlaceholderColor;
+    font-size: $textboxPlaceholderSize;
+	font-style: $textboxPlaceholderStyle;
+}
+
+/* BUTTON SIZES */
+.button-xl {
+    padding: .875em 1.75em;
+    font-size: 1.25em;
+    @include border-radius(6px);
+}
+
+.button-lg {
+    padding: .5em 1em;
+    font-size: 1em;
+    @include border-radius(5px);
+}
+
+.button-med {
+    padding: .375em .75em;
+    font-size: .875em;
+    line-height: 1em;
+    @include border-radius(4px);
+}
+
+.button-xs {
+    padding: .25em .5em;
+    font-size: .75em;
+    line-height: .875em;
+    @include border-radius(3px);
+}
+
+/* TABLES */
+table {
+    height: 100%;
+    width: 100%;
+    margin-bottom: $baselineHeight / 2;
+    background-color: $tableBackground;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: $tableCellPadding;
+    vertical-align: middle;
+    line-height: $baselineHeight;
+    text-align: left;
+    font-size: .875em;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border-top: $tableBorderWidth $tableBorderStyle $tableBorderColor;
+}
+
+thead th {
+    vertical-align: bottom;
+}
+
+thead:first-child tr:first-child th,
+thead:first-child tr-first-child td {
+    border-top: 0;
+}
+
+tbody tr td,
+tbody tr th {
+    @include transition(background-color .25s 0 ease);
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+    background-color: $tableHover;
+}
+
+.table-striped {
+    tbody tr:nth-child(odd) td,
+    tbody tr:nth-child(odd) th {
+        background-color: $tableStripe;
+    }
+}

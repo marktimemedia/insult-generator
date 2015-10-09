@@ -1,0 +1,164 @@
+// ---- ---- ---- ---- VARIABLES ---- ---- ---- ----
+
+// Site Colors
+$springColor1: #bada55; // pink
+$springColor1_Lt: #85ae35;
+$springColor1_Dk: #85ae35;
+
+$springColor2: #000;
+$springColor2_Lt: #000;
+$springColor2_Dk: #000;
+
+$springColor3: #000;
+$springColor3_Lt: #000;
+$springColor3_Dk: #000;
+
+$springColor4: #000;
+$springColor4_Lt: #000;
+$springColor4_Dk: #000;
+
+
+// Neutrals
+$Ndarkest: #322e2f; 
+$Ndarker: lighten($Ndarkest, 10%);
+$Ndark: #595559; 
+$Nmid: #948790; 
+$Nlight: #948f93; 
+$Nlighter: #d4ccd4;
+$Nlightest: #f4f2f3; 
+$white: #fff;
+
+// Root
+$bodyColor: $white;
+$textColor: $Nlightest;
+$columnMargin: .5em;
+$gutter: 1em;
+$warningColor: red;
+$textFontSize: 1rem;
+
+// Typography
+$baseFont: 'Open Sans', sans-serif;
+$baseFontSize: 100%;
+$baselineHeight: 1.3em;
+$baseLetterSpace: 0px;
+$baseFontWeight: 100;
+
+$headingFont: $baseFont;
+$headingLineHeight: 1.1;
+$headingLetterSpace: 0px;
+
+$subheadingFont: $baseFont;
+$subheadingLineHeight: 1.1;
+$subheadingLetterSpace: 0px;
+
+$h1Color: $white;
+$h1Size: 3em;
+$h1FontWeight: 200;
+
+$h2Color: $Nlightest;
+$h2Size: 1.75em;
+$h2FontWeight: 200;
+
+$h3Color: $Nlightest;
+$h3Size: 1.5em;
+$h3FontWeight: 300;
+
+$h4Color: $Nlight;
+$h4Size: 1.2em;
+$h4FontWeight: 500;
+
+$h5Color: $Nlight;
+$h5Size: 1.2em;
+$h5FontWeight: 300;
+
+$h6Color: $Nlight;
+$h6Size: .875em;
+$h6FontWeight: 200;
+
+$headingTextShadow: none;
+$codeFont: 'Source Code Pro', monospace;
+
+$metaColor: $Nlighter;
+$metaSize: .875em;
+$metaFontWeight: 100;
+
+// Links
+$linkColor: $springColor1;
+$linkHover: lighten($linkColor,20%);
+$linkVisited: darken($linkColor,20%);
+$linkFocus: lighten($linkColor,15%);
+
+// Forms
+$textboxBackground: $white;
+$textboxBorderColor: $Nlighter;
+$textboxBorderColorActive: $springColor1;
+$textboxBorderWidth: 1px;
+$textboxBorderStyle: solid;
+$textboxColor: $textColor;
+$textboxPlaceholderColor: $Nlighter;
+$textboxPlaceholderSize: .875em;
+$textboxPlaceholderStyle: normal; //Change to italic if you want placeholder text to be italic.
+$textboxPadding: .5em;
+$textboxOutline: none;
+$textboxMaxWidth: 30em;
+
+$labelFontSize: 1.125em;
+$labelColor: $textColor;
+
+$buttonBackground: $springColor1;
+$buttonBackground2: $springColor1_Lt; //Uncomment if you want a gradient background on a button. Also uncomment gradient in
+$buttonBorderColor: darken($buttonBackground,5%);
+$buttonBorderWidth: 1px;
+$buttonBorderStyle: solid;
+$buttonColor: $white;
+$buttonOutlineColor: $springColor1;
+$buttonFont: $baseFont;
+$buttonFontSize: 1em;
+$buttonFontWeight: 200;
+$buttonPadding: .5em 2em;
+
+$buttonAltBackground: $Ndark;
+$buttonAltBackground2: $Nlighter;
+
+// Tables
+$tableBackground: transparent;
+$tableCellPadding: .25em;
+$tableStripe: $Nlighter;
+$tableFontSize: .875em;
+$tableLineHeight: 1.4em;
+$tableBorderWidth: 1px;
+$tableBorderStyle: solid;
+$tableBorderColor: $Nlighter;
+$tableHover: transparent;
+
+// Blockquotes
+$blockquoteMarginBottom: .875rem;
+$blockquotePaddingLeft: 0;
+$blockquoteBorderWidth: 0;
+$blockquoteBorderStyle: solid;
+$blockquoteBorderColor: $Nlighter;
+$blockquoteColor: $Nmid;
+$blockquoteFontFamily: $headingFont;
+$blockquoteFontSize: 1.25rem;
+$blockquoteFontStyle: italic;
+$blockquoteFontWeight: 200;
+
+// Code/Pre blocks
+$codeMargin: 1em 0;
+$codePadding: $gutter / 2;
+$codeBackground: $Nlightest;
+$codeBorder: 0;
+$codeFontFamily: $codeFont;
+$codeFontSize: .875em;
+$codeColor: $textColor;
+
+// Breakpoints
+$smallBreakpoint: 30.5em;
+$midBreakpoint: 48.5em;
+$largeBreakpoint: 62.5em;
+$widescreenBreakpoint: 83.5em;
+
+// boxed max-width:
+$boxedMax: 81rem;
+$maxPadding: 0 3rem;
+$smallPadding: 1rem;

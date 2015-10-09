@@ -1,0 +1,148 @@
+// Ellipsis at end of line, no wrap.
+// @include text-overflow()
+@mixin text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Image Replacement
+// @include hide-text()
+@mixin hide-text() {
+	text-shadow: none;
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// Values for property in REM and PX with 1rem = 16px by Karl Merkli
+// @inlcude rem-px(STRING PROPERTY, REMVAL1, REMVAL2, REMVAL3, REMVAL4)
+// @inlcude rem-px(margin, 1, 1, 2, 1.5) outputs or
+// @include rem-px(margin, 1rem, 1rem, 2rem, 1.5rem) outputs:
+// margin: 160px 320px 480px 640px;
+// margin: 10rem 20rem 30rem 40rem;
+@mixin rem-px($property, $values...) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+
+		@if $value != 0 {
+			$pxValues: #{$pxValues + $value*16}px;
+		} @else {
+			$pxValues: #{$pxValues + $value*16};
+		}
+
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	}
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+
+		@if $value != 0 {
+			$remValues: #{$remValues + $value}rem;
+		} @else {
+			$remValues: #{$remValues + $value};
+		}
+
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	}
+
+	#{$property}: $pxValues;
+	#{$property}: $remValues;
+}
+
+// Values for property in REM and PX with 16px = 1rem adapted from mixin by Karl Merkli
+// @inlcude px-rem(STRING PROPERTY, PXVAL1, PXVAL2, PXVAL3, PXVAL4)
+// @inlcude px-rem(margin, 16, 16, 32, 24) or
+// @include px-rem(margin, 16px, 16px, 32px, 24px) outputs:
+// margin: 16px 16px 32px 24px;
+// margin: 1rem 1rem 2rem 1.5rem;
+@mixin px-rem($property, $values...) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+
+		@if $value != 0 {
+			$pxValues: #{$pxValues + $value}px;
+		} @else {
+			$pxValues: #{$pxValues + $value};
+		}
+
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	}
+
+	@for $i from 1 through $max {
+		$value: strip-unit(nth($values, $i));
+
+		@if $value != 0 {
+			$remValues: #{$remValues + $value/16}rem;
+		} @else {
+			$remValues: #{$remValues + $value};
+		}
+
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	}
+
+	#{$property}: $pxValues;
+	#{$property}: $remValues;
+}
+
+// Fakes an ellipsis on a multi-line content box
+// Apply on a parent of the element you want the multi-line ellipsis inside of
+// @include multiline-ellipsis(STRING CSS-SELECTOR, PX-OR-EM-VALUE, LINEHEIGHT, WIDTH OF GRADIENT BG, 'CONTENT-OF-ELLIPSIS');
+// @include multiline-ellipsis('.content', 6em, 1.2em, 3em, '...');
+@mixin multiline-ellipsis($element, $height, $lineheightinmixin, $ellipsiswidth, $content) {
+
+	$element: '.ellipsis' !default;
+	$ellipsiswidth: 3em !default;
+	$content: "\02026" !default;
+
+	#{$element} {
+		overflow: hidden;
+		height: $height;
+		line-height: $lineheightinmixin; }
+
+	#{$element}:before {
+		content:"";
+		float: left;
+		width: 5px; height: $height; }
+
+	#{$element} > *:first-child {
+		float: right;
+		width: 100%;
+		margin-left: -5px; }
+
+	#{$element}:after {
+		content: $content;
+
+		@include box-sizing(content-box);
+
+		float: right; position: relative;
+		top: -$lineheightinmixin; left: 100%;
+		width: $ellipsiswidth; margin-left: -$ellipsiswidth;
+		padding-right: 5px;
+
+		text-align: right;
+		background: white;
+		background: -webkit-gradient(linear, left top, right top,
+			from(rgba(242, 247, 250, 0)), to($kbTan), color-stop(50%, $kbTan));
+		background: -moz-linear-gradient(to right, rgba(242, 247, 250, 0), $kbTan 50%, $kbTan);
+		background: -o-linear-gradient(to right, rgba(242, 247, 250, 0), $kbTan 50%, $kbTan);
+		background: -ms-linear-gradient(to right, rgba(242, 247, 250, 0), $kbTan 50%, $kbTan);
+		background: linear-gradient(to right, rgba(242, 247, 250, 0), $kbTan 50%, $kbTan);
+	}
+}

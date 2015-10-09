@@ -1,0 +1,78 @@
+/* Structure */
+
+.fucking {
+	width:100%;
+	height:auto;
+}
+
+.shit {
+	text-align:center;
+}
+
+.damn {
+
+}
+
+.bitch {
+	text-transform:uppercase;
+}
+
+.ass {
+	font-weight:700;
+}
+
+
+/* Elements */
+ 
+header, body, .site-wrapper, footer {
+	background-color: $Ndarkest;
+}
+
+.site-wrapper {
+	height:100%;
+}
+
+.main-body {
+}
+
+.header {
+	padding:1em;
+}
+
+.content {
+	display:inline-block;
+	vertical-align:middle;
+	padding:1em;
+
+	&:before {
+		content:'';
+		display:inline-block;
+		vertical-align:middle;
+		height:100%;
+	}
+}
+	.meta {
+		font-style:italic;
+		font-weight:500;
+	}
+
+	.description {
+		margin-bottom:1.5em;
+	}
+
+.footer {
+	padding:3em 1em 1em 1em;
+	font-size:.8em;
+}
+
+@media only screen and (min-width:#{$midBreakpoint}) {
+	h1 {
+		font-size:4.25em;
+	}
+
+	footer {
+		padding:1em;
+		position:absolute;
+		bottom:0;
+	}
+}

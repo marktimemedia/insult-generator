@@ -1,0 +1,85 @@
+// None of these work with the -moz- or -ms- prefixes yet. I've added them looking at future support in Firefox and Internet Explorer.
+// Uncomment them if/when they become necessary.
+// Adapted from http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/
+
+
+
+// Apply a gaussian blur to an image in px, em, rem
+// @include filter-blur(RADIUS);
+@mixin filter-blur($radius) {
+	-webkit-filter: blur($radius);
+	//-moz-filter: blur($radius);
+	//-ms-filter: blur($radius);
+	filter: blur($radius);
+}
+
+// Alter the brightness of an image
+// Min: 0, Max: n%, Default: 100% (no change at 100%)
+// @include filter-brightness(PERCENT);
+@mixin filter-brightness($percent) {
+	-webkit-filter: brightness($percent);
+	//-moz-filter: brightness($percent);
+	//-ms-filter: brightness($percent);
+	filter: brightness($percent);
+}
+
+// Increase or decrease the contrast of an image.
+// Min: 0, Max: n%, Default: 100% (no change at 100%)
+// @include filter-contrast(PERCENT);
+@mixin filter-contrast($percent: 100%) {
+	-webkit-filter: contrast($percent);
+	//-moz-filter: contrast($percent);
+	//-ms-filter: contrast($percent);
+	filter: contrast($percent);
+}
+
+// Change the grayscale of an image
+// Min: 0, Max: 100%, Default: 0 (full color at 0)
+// @include filter-grayscale(PERCENTAGE);
+@mixin filter-grayscale($percent) {
+	-webkit-filter: grayscale($percent);
+	//-moz-filter: grayscale($percent);
+	//-ms-filter: grayscale($percent);
+	filter: grayscale($percent);
+}
+
+// Rotate the hue of an image
+// @include filter-hue-rotate(INT);
+@mixin filter-hue-rotate($rotate) {
+	-webkit-filter: hue-rotate(#{$rotate}deg);
+	//-moz-filter: hue-rotate(#{$rotate}deg);
+	//-ms-filter: hue-rotate(#{$rotate}deg);
+	filter: hue-rotate(#{$rotate}deg);
+}
+
+// Invert the colors of an image
+// Min: 0, Max: 100%, Default: 0 (no change at 0)
+// @include filter-invert(PERCENT);
+@mixin filter-invert($percent: 0) {
+	-webkit-filter: invert($percent);
+	//-moz-filter: invert($percent);
+	//-ms-filter: invert($percent);
+	filter: invert($percent);
+}
+
+// Increase or decrease the color saturation of an image.
+// Min: 0, Max: n%, Default: 100% (no change at 100%)
+// @include filter-saturate(PERCENT);
+@mixin filter-saturate($percent: 100%) {
+	-webkit-filter: saturate($percent);
+	//-moz-filter: saturate($percent);
+	//-ms-filter: saturate($percent);
+	filter: saturate($percent);
+}
+
+// Apply a sepia filter
+// Min: 0, Max: 100%, Default: 0 (full color, no sepia at 0)
+// @include filter-sepia(PERCENT);
+@mixin filter-sepia($percent) {
+	-webkit-filter: sepia($percent);
+	//-moz-filter: sepia($percent);
+	//-ms-filter: sepia($percent);
+	filter: sepia($percent);
+}
+
+//TODO: Multiple filters mixin

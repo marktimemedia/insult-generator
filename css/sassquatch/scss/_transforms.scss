@@ -1,0 +1,71 @@
+// Set a Transform point
+// @include transform-origin(PERCENTAGE_WIDTH, PERCENTAGE_HEIGHT)
+// @include transform-origin(25%, 50%)
+@mixin transform-origin($x, $y) {
+	-webkit-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	transform-origin: $x $y;
+}
+
+// Rotate an element
+// @include transform-rotate(INT);
+@mixin transform-rotate($deg) {
+	-webkit-transform: rotate(#{$deg}deg);
+	-moz-transform: rotate(#{$deg}deg);
+	-ms-transform: rotate(#{$deg}deg);
+	-o-transform: rotate(#{$deg}deg);
+	transform: rotate(#{$deg}deg);
+}
+
+// Increase size of element
+// @include transform-scale(FACTOR, FACTOR)
+//TODO: Can I do $factor-height: $factor-width as a default for width so @include transform-scale(4) = (4,4)?
+@mixin transform-scale($factor-width, $factor-height) {
+	-webkit-transform: scale($factor-width, $factor-height);
+	-moz-transform: scale($factor-width, $factor-height);
+	-ms-transform: scale($factor-width, $factor-height);
+	-o-transform: scale($factor-width, $factor-height);
+	transform: scale($factor-width, $factor-height);
+}
+
+// Skew the shape of an element
+// @include transform-skew(INT ANGLE, INT ANGLE)
+@mixin transform-skew($angle-x, $angle-y) {
+	-webkit-transform: skew(#{$angle-x}deg, #{$angle-y}deg);
+	-moz-transform: skew(#{$angle-x}deg, #{$angle-y}deg);
+	-ms-transform: skew(#{$angle-x}deg, #{$angle-y}deg);
+	-o-transform: skew(#{$angle-x}deg, #{$angle-y}deg);
+	transform: skew(#{$angle-x}deg, #{$angle-y}deg);
+}
+
+// Move an element on the x- and y-axis
+// @include transform-translate(DISTANCE, DISTANCE);
+@mixin transform-translate($distance-x, $distance-y) {
+	-webkit-transform: translate($distance-x, $distance-y);
+	-moz-transform: translate($distance-x, $distance-y);
+	-ms-transform: translate($distance-x, $distance-y);
+	-o-transform: translate($distance-x, $distance-y);
+	transform: translate($distance-x, $distance-y);
+}
+
+//TODO: Tackle the transform-matrix() mixin
+//TODO: 3D Transform mixins
+
+// Move an element on the z-axis
+// @include transform-translateZ(DISTANCE)
+@mixin transform-translateZ($distance-z) {
+	-webkit-transform: translateZ($distance-z);
+	-moz-transform: translateZ($distance-z);
+	-ms-transform: translateZ($distance-z);
+	-o-transform: translateZ($distance-z);
+	transform: translateZ($distance-z);
+}
+
+// Move an element on the x-, y-, and z-axis
+// @include transform-translate3d(DISTANCE, DISTANCE, DISTANCE);
+@mixin transform-translate3d($distance-x, $distance-y, $distance-z) {
+	-webkit-transform: translate3d($distance-x, $distance-y, $distance-z);
+	-moz-transform: translate3d($distance-x, $distance-y, $distance-z);
+	-ms-transform: translate3d($distance-x, $distance-y, $distance-z);
+	transform: translate3d($distance-x, $distance-y, $distance-z);
+}

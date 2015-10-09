@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="tests.css" rel="stylesheet">
+</head>
+<body>
+    <div class="tests-wrapper">
+        <section class="transforms mixin-set">
+            <h1>
+                2D Transforms
+            </h1>
+            <section class="untouched">
+                <header>
+                    <h3>
+                        No Transforms Applied
+                    </h3>
+                    <aside>
+                        Shows boxes before mixins
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="rotate">
+                <header>
+                    <h3>
+                        @include transform-rotate(30)
+                    </h3>
+                    <aside>
+                        Rotates an element using a 2D transform
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="scale">
+                <header>
+                    <h3>
+                        @include transform-scale(2,1.5)
+                    </h3>
+                    <aside>
+                        Enlarges/Reduces size of an element using a 2D transform
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="skew">
+                <header>
+                    <h3>
+                        @include transform-skew(10,20)
+                    </h3>
+                    <aside>
+                        Skews an element using a 2D transform
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="translate">
+                <header>
+                    <h3>
+                        @include transform-translate(10px,1em)
+                    </h3>
+                    <aside>
+                        Relocates an element using a 2D transform
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="animations mixin-set">
+            <h1>
+                Animations
+            </h1>
+            <section class="untouched">
+                <header>
+                    <h3>
+                        No Animations Applied
+                    </h3>
+                    <aside>
+                        Shows boxes before mixins
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="transition">
+                <header>
+                    <h3>
+                        @include transition(width .3s ease);
+                    </h3>
+                    <aside>
+                        Animates an object's width
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="multi-transition">
+                <header>
+                    <h3>
+                        @include multi-transition('background-color .3s ease',<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'width .3s .3s ease', <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'height .3s .6s ease');
+                    </h3>
+                    <aside>
+                        Animates an object's width and height
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="animation">
+                <header>
+                    <h3>
+                        @include animation(box-rotate 5s);<br />
+                        @include keyframes(box-rotate) {<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;0% { @include rotate(0); }<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;100% { @inclide rotate(360); }<br />
+                        }
+                    </h3>
+                    <aside>
+                        Rotate an object via keyframe animation
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="filters mixin-set">
+            <h1>
+                Filters
+            </h1>
+            <section class="untouched">
+                <header>
+                    <h3>
+                        No Filters Applied
+                    </h3>
+                    <aside>
+                        Shows boxes before mixins
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                </div>
+            </section>
+            <section class="blur">
+                <header>
+                    <h3>
+                        @include filter-blur(10px);
+                    </h3>
+                    <aside>
+                        Gaussian blur with 10px radius
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="brightness">
+                <header>
+                    <h3>
+                        @include filter-brightness(115%);
+                    </h3>
+                    <aside>
+                        15% increase in the element's brightness
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="contrast">
+                <header>
+                    <h3>
+                        @include filter-contrast(125%);
+                    </h3>
+                    <aside>
+                        25% increase in the element's contrast
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="grayscale">
+                <header>
+                    <h3>
+                        @include filter-grayscale(100%);
+                    </h3>
+                    <aside>
+                        100% removal of color
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="hue-rotate">
+                <header>
+                    <h3>
+                        @include filter-hue-rotate(150);
+                    </h3>
+                    <aside>
+                        Change the color of an element by rotating it's hue.
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="invert">
+                <header>
+                    <h3>
+                        @include filter-invert(100%);
+                    </h3>
+                    <aside>
+                        Invert an element's colors
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="saturate">
+                <header>
+                    <h3>
+                        @include filter-saturate(300%);
+                    </h3>
+                    <aside>
+                        Saturate an element's colors
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+            <section class="sepia">
+                <header>
+                    <h3>
+                        @include filter-sepia(100%);
+                    </h3>
+                    <aside>
+                        Apply a sepia tone to an element.
+                    </aside>
+                </header>
+                <div class="object">
+                    <img src="img/3themeslogo_large.png" class="vanilla-img" />
+                    <img src="img/3themeslogo_large.png" class="applied-test-img" />
+                </div>
+            </section>
+        </section>
+        <section class="backgrounds mixin-set">
+            <h1>
+                Backgrounds
+            </h1>
+            <section class="untouched">
+                <header>
+                    <h3>
+                        No Backgrounds Applied
+                    </h3>
+                    <aside>
+                        Shows boxes before mixins
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="horizontal">
+                <header>
+                    <h3>
+                        @include horizontal(#bada55, #ffffff);
+                    </h3>
+                    <aside>
+                        Horizontal gradient background from #bada55 to #ffffff
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="vertical">
+                <header>
+                    <h3>
+                        @include vertical(#bada55, #ffffff);
+                    </h3>
+                    <aside>
+                        Vertical gradient background from #bada55 to #ffffff
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="directional">
+                <header>
+                    <h3>
+                        @include directional(#bada55, #ffffff, 45deg);
+                    </h3>
+                    <aside>
+                        Directional gradient background from #bada55 to #ffffff at 45 degrees
+                    </aside>
+                </header>
+                <div class="object">
+                    <div class="vanilla">
+
+                    </div>
+                    <div class="applied-test">
+
+                    </div>
+                </div>
+            </section>
+            <section class="background-2x">
+                <header>
+                    <h3>
+                        @include background-2x();
+                    </h3>
+                    <aside>
+                        Still needs a test error from $bgimg
+                    </aside>
+                </header>
+                <div class="object">
+                    
+                </div>
+            </section>
+            <section class="background-3x">
+                <header>
+                    <h3>
+                        @include background-3x();
+                    </h3>
+                    <aside>
+                        Still needs a test error from $bgimg
+                    </aside>
+                </header>
+                <div class="object">
+                    
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
