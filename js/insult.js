@@ -52,6 +52,16 @@
 		'Dude\'s a real <span class="ass"></span>, you know what I mean?',
 		'He\'s got an ego like a <span class="ass"></span>!',
 		'She was being a real <span class="ass"></span> at the store today!',
+		'That <span class="ass"></span> developer\'s code refuses to compile!',
+		'Her kids are total <span class="ass"></span>s!',
+		'Whoever wrote this API documentation is a complete <span class="ass"></span>!',
+		'That guy has the personality of a <span class="ass"></span>!',
+		'I\'m pretty sure I was a total <span class="ass"></span> at the bar last night.',
+		'What kind of <span class="ass"></span> buys pre-ground coffee?',
+		'I\'d rather get a <span class="ass"></span> to the eye than sit through this lecture.',
+		'Wow, that <span class="ass"></span> just went off the deep end.',
+		'I may be a jerk, but at least I\'m not like that <span class="ass"></span> over there.',
+		'I need that like a need a <span class="ass"></span> on my elbow.',
 	];
 
 	function randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions ) {
