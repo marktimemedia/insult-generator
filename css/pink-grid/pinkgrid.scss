@@ -2,16 +2,14 @@
 	box-sizing: border-box; // All Pink Mixins need this in order to work :)
 }
 
-/* 	PINK GRID
-* 	Sass Width Percentage Generator
-*
-*	$align:			Vertical-align property 											Defaults to Top
-* 	$totalcols: 	Number of columns in your grid ( ex: 12 ) 							Defaults to $defaultcols
-* 	$colspan: 		Number of columns your item spans ( ex: 3 / 12 ) 					Defaults to $defaultcols (100% width)
-*	$padside:		Percentage padding left/right of each item.							Defaults to $defaultpad
-*	$padtop:		Percentage padding above/below around each item. 					Defaults to 0
-*			
-*/
+// 	PINK GRID
+// 	Sass Width Percentage Generator
+//
+//	$align:			Vertical-align property 											Defaults to Top
+// 	$totalcols: 	Number of columns in your grid ( ex: 12 ) 							Defaults to $defaultcols
+// 	$colspan: 		Number of columns your item spans ( ex: 3 / 12 ) 					Defaults to $defaultcols (100% width)
+//	$padside:		Percentage padding left/right of each item.							Defaults to $defaultpad
+//	$padtop:		Percentage padding above/below around each item. 					Defaults to 0	
 
 $defaultcols: 12; 
 $defaultpad: 1%;
@@ -33,15 +31,14 @@ $defaultpad: 1%;
 		
 }
 
-/* 	PINK ROW
-* 	Sass Row Item Generator
-*	Built in conjunction with Pink Grid
-*
-*	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
-*	$before:		Alternating row layouts: elements before this row 		Defaults to 0
-*	$after:			Alternating row layouts: elements after this row 		Defaults to 0
-*
-*/
+// 	PINK ROW
+// 	Sass Row Item Generator
+//	Built in conjunction with Pink Grid
+//
+//	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
+//	$before:		Alternating row layouts: elements before this row 		Defaults to 0
+//	$after:			Alternating row layouts: elements after this row 		Defaults to 0
+//
 
 
 @mixin pinkrow( $rowitems: 1, $before: 0, $after: 0 ) {
@@ -70,18 +67,17 @@ $defaultpad: 1%;
 }
 
 
-/* 	PINK MAGIC ROW
-* 	Complete responsive grid solution for equally sized items per row. 
-*	Includes a space to define your media query breakpoints (based on min-width)
-*
-*	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
-*	$padside:		Padding to the left/right of each item 					Defaults to $magicside
-*	$padtop:		Padding above/below around each item. 					Defaults to $magictop
-* 	$align 			Vertical-align property 								Defaults to Top
-*	$before:		Alternating row layouts: elements before this row 		Defaults to 0
-*	$after:			Alternating row layouts: elements after this row 		Defaults to 0
-*
-*/
+// 	PINK MAGIC ROW
+//	Complete responsive grid solution for equally sized items per row. 
+//	Includes a space to define your media query breakpoints (based on min-width)
+//
+//	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
+//	$padside:		Padding to the left/right of each item 					Defaults to $magicside
+//	$padtop:		Padding above/below around each item. 					Defaults to $magictop
+// 	$align 			Vertical-align property 								Defaults to Top
+//	$before:		Alternating row layouts: elements before this row 		Defaults to 0
+//	$after:			Alternating row layouts: elements after this row 		Defaults to 0
+
 
 $magicrow: 		4; 			// Global default number of items per row
 $magictop: 		10px;		// Global default of top padding

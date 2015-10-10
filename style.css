@@ -1,37 +1,6 @@
 * {
   box-sizing: border-box; }
 
-/* 	PINK GRID
-* 	Sass Width Percentage Generator
-*
-*	$align:			Vertical-align property 											Defaults to Top
-* 	$totalcols: 	Number of columns in your grid ( ex: 12 ) 							Defaults to $defaultcols
-* 	$colspan: 		Number of columns your item spans ( ex: 3 / 12 ) 					Defaults to $defaultcols (100% width)
-*	$padside:		Percentage padding left/right of each item.							Defaults to $defaultpad
-*	$padtop:		Percentage padding above/below around each item. 					Defaults to 0
-*			
-*/
-/* 	PINK ROW
-* 	Sass Row Item Generator
-*	Built in conjunction with Pink Grid
-*
-*	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
-*	$before:		Alternating row layouts: elements before this row 		Defaults to 0
-*	$after:			Alternating row layouts: elements after this row 		Defaults to 0
-*
-*/
-/* 	PINK MAGIC ROW
-* 	Complete responsive grid solution for equally sized items per row. 
-*	Includes a space to define your media query breakpoints (based on min-width)
-*
-*	$rowitems:		Number of items per row ( ex. 4 )						Defaults to 1
-*	$padside:		Padding to the left/right of each item 					Defaults to $magicside
-*	$padtop:		Padding above/below around each item. 					Defaults to $magictop
-* 	$align 			Vertical-align property 								Defaults to Top
-*	$before:		Alternating row layouts: elements before this row 		Defaults to 0
-*	$after:			Alternating row layouts: elements after this row 		Defaults to 0
-*
-*/
 /*
   ---- ---- ---- ---- RESET STYLESHEET ---- ---- ---- ----
 */
@@ -679,6 +648,9 @@ tbody tr:hover th {
 
 .ass {
   font-weight: 700; }
+
+.mothafuckin {
+  display: inline; }
 
 /* Elements */
 header, body, .site-wrapper, footer {

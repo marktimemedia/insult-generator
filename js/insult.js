@@ -64,7 +64,7 @@
 	}
 
 	function randThatShitUp() {
-		var $fuckingTarget = $( '.fucking.description .muffin' );
+		var $fuckingTarget = $( '.fucking.description .sentence' );
 		var randFuckingArray = randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions );
 		var fuckingDescription = randFuckingArray[2];
 
