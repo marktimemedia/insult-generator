@@ -105,7 +105,7 @@
 
 		var fuckingDescriptionAgain = fuckingDescription.replace( '<span class="ass"></span>', randFuckingArray[0] + ' ' + randFuckingArray[1] );
 
-		var newFuckingUrl = fuckingSpit[0] + 'text=' + randFuckingArray[0] + ' ' + randFuckingArray[1] + ': noun - ' + fuckingDescriptionAgain + ' Get yours at ' ;
+		var newFuckingUrl = fuckingSpit[0] + 'text=' + randFuckingArray[0] + ' ' + randFuckingArray[1] + ' (noun) "' + fuckingDescriptionAgain + '" Get yours at' ;
 
 		// alert( fuckingDescriptionAgain );
 
