@@ -1,5 +1,8 @@
 ( function( $ ){
 
+	var randFuckingArray = '',
+		fuckingDescription = '';
+
 	var cussing = [
 		'Snatch',
 		'Cunt',
@@ -75,8 +78,8 @@
 
 	function randThatShitUp() {
 		var $fuckingTarget = $( '.fucking.description .sentence' );
-		var randFuckingArray = randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions );
-		var fuckingDescription = randFuckingArray[2];
+		randFuckingArray = randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions );
+		fuckingDescription = randFuckingArray[2];
 
 		// Swapping out the title bitches
 		$( '.insult h1.ass' ).html( randFuckingArray[0] + ' ' + randFuckingArray[1] );
@@ -91,6 +94,24 @@
 
 	// On load bitches
 	randThatShitUp();
+
+	$( 'a.twitter-share-button' ).on( 'click', function( e ) {
+
+		// e.preventDefault();
+
+		var fuckingUrl = $( this ).attr( 'href' );
+
+		var fuckingSpit = fuckingUrl.split( 'text=' );
+
+		var fuckingDescriptionAgain = fuckingDescription.replace( '<span class="ass"></span>', randFuckingArray[0] + ' ' + randFuckingArray[1] );
+
+		var newFuckingUrl = fuckingSpit[0] + 'text=' + randFuckingArray[0] + ' ' + randFuckingArray[1] + ': noun - ' + fuckingDescriptionAgain + ' Get yours at ' ;
+
+		// alert( fuckingDescriptionAgain );
+
+		$( this ).attr( 'href', encodeURI( newFuckingUrl ) );
+
+	} );
 
 
 } )( jQuery );
