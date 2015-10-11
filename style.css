@@ -650,7 +650,7 @@ tbody tr:hover th {
   font-weight: 700; }
 
 .mothafuckin {
-  display: inline; }
+  display: inline-block; }
 
 /* Elements */
 header, body, .site-wrapper, footer {
@@ -678,6 +678,15 @@ header, body, .site-wrapper, footer {
 
 .description {
   margin-bottom: 1.5em; }
+
+.shares {
+  padding: 2em 1em 1em 1em; }
+
+.fa-twitter, .fa-facebook {
+  padding: 0 0 0 .3em;
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: middle; }
 
 .footer {
   padding: 3em 1em 1em 1em;
