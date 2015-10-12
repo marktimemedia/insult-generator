@@ -64,7 +64,7 @@
 		'I\'d rather get a <span class="ass"></span> to the eye than sit through this lecture.',
 		'Wow, that <span class="ass"></span> just went off the deep end.',
 		'I may be a jerk, but at least I\'m not like that <span class="ass"></span> over there.',
-		'I need that like a need a <span class="ass"></span> on my elbow.',
+		'I need that like I need a <span class="ass"></span> on my elbow.',
 	];
 
 	function randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions ) {
