@@ -85,6 +85,9 @@
 		'I may be a jerk, but at least I\'m not like that <span class="ass"></span> over there.',
 		'I need that like I need a <span class="ass"></span> on my elbow.',
 		'What kind of <span class="ass"></span> slows down to merge on the highway?',
+		'You\'ve got a face like a <span class="ass"></span>.',
+		'Nothing personal, but you\'re a real <span class="ass"></span>.',
+		'What a bunch of <span class="ass"></span>s.',
 	];
 
 	function randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions ) {
