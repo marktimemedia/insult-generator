@@ -67,7 +67,7 @@
 	var fuckingDescriptions = [
 		'That <span class="ass"></span> just cut me off!',
 		'My boss is a major <span class="ass"></span>!',
-		'Don\'t tell him I said this, but that guy is a real <span class="ass"></span>!',
+		'Don\'t tell her I said this, but that dude she\'s with is a real <span class="ass"></span>!',
 		'Quit being such a <span class="ass"></span>!',
 		'The only people who would vote for that guy are total <span class="ass"></span>s!',
 		'What are you, some kind of <span class="ass"></span>?',
