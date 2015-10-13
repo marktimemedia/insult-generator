@@ -23,7 +23,6 @@
 		'Wang',
 		'Cum',
 		'Whore',
-		'Anus',
 		'Schlong',
 	];
 
