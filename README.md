@@ -8,4 +8,4 @@ We are following this pattern, assholes:
   - Double-syllable noun
   - Fucking hilarious sentence that isn't too topical
 
-Contributors get a fucking insulting attribution in the commit messages because that's how we fucking roll here.
+Contributors don't get shit because that's how we fucking roll here.
