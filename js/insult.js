@@ -7,7 +7,9 @@
 		'Snatch',
 		'Cunt',
 		'Dick',
+		'Fart',
 		'Fuck',
+		'Jizz',
 		'Bitch',
 		'Ass',
 		'Wank',
@@ -15,10 +17,12 @@
 		'Tit',
 		'Cock',
 		'Shit',
+		'Slut',
 		'Twat',
 		'Butt',
 		'Wang',
 		'Cum',
+		'Whore',
 	];
 
 	var fuckAssNoun = [
@@ -27,6 +31,8 @@
 		'Biscuit',
 		'Bucket',
 		'Bubble',
+		'Cracker',
+		'Cranker',
 		'Nozzle',
 		'Nugget',
 		'Pistol',
@@ -48,7 +54,12 @@
 		'Cocktail',
 		'Dumpster',
 		'Hatchet',
-
+		'Shitter',
+		'Blister',
+		'Dragon',
+		'Fister',
+		'Twiddler',
+		'Whistle',
 	];
 
 	var fuckingDescriptions = [
