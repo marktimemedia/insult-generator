@@ -53,7 +53,6 @@
 		'Blister',
 		'Dragon',
 		'Fister',
-		'Skank',
 		'Twiddler',
 		'Whistle',
 	];
