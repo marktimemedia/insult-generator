@@ -23,6 +23,7 @@
 		'Wang',
 		'Cum',
 		'Whore',
+		'Schlong',
 	];
 
 	var fuckAssNoun = [
@@ -60,6 +61,7 @@
 		'Fister',
 		'Twiddler',
 		'Whistle',
+		'Guzzler',
 	];
 
 	var fuckingDescriptions = [
