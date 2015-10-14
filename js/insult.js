@@ -120,17 +120,10 @@
 
 	$( 'a.twitter-share-button' ).on( 'click', function( e ) {
 
-		// e.preventDefault();
-
 		var fuckingUrl = $( this ).attr( 'href' );
-
 		var fuckingSpit = fuckingUrl.split( 'text=' );
-
-		var fuckingDescriptionAgain = fuckingDescription.replace( '<span class="ass"></span>', randFuckingArray[0] + ' ' + randFuckingArray[1] );
-
+		var fuckingDescriptionAgain = fuckingDescription.replace( '<span class=\'ass\'></span>', randFuckingArray[0] + ' ' + randFuckingArray[1] );
 		var newFuckingUrl = fuckingSpit[0] + 'text=' + randFuckingArray[0] + ' ' + randFuckingArray[1] + ' (noun) "' + fuckingDescriptionAgain + '" Get yours at' ;
-
-		// alert( fuckingDescriptionAgain );
 
 		$( this ).attr( 'href', encodeURI( newFuckingUrl ) );
 
