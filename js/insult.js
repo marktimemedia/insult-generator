@@ -8,6 +8,7 @@
 		'Bitch',
 		'Butt',
 		'Cock',
+		'Chode',
 		'Cum',
 		'Cunt',
 		'Dick',
@@ -15,6 +16,7 @@
 		'Fart',
 		'Fuck',
 		'Jizz',
+		'Sausage',
 		'Schlong',
 		'Shit',
 		'Slut',
@@ -32,6 +34,7 @@
 		'Blister',
 		'Bubble',
 		'Bucket',
+		'Burrito',
 		'Camel',
 		'Canoe',
 		'Cocktail',
@@ -43,6 +46,7 @@
 		'Fister',
 		'Guzzler',
 		'Hatchet',
+		'Magician',
 		'Monkey',
 		'Muffin',
 		'Muncher',
@@ -50,8 +54,10 @@
 		'Nugget',
 		'Panda',
 		'Pilot',
+		'Pirate',
 		'Pistol',
 		'Pusher',
+		'Roper',
 		'Sandwich',
 		'Scratcher',
 		'Scrubber',
@@ -60,8 +66,10 @@
 		'Taco',
 		'Twiddler',
 		'Waffle',
+		'Wallet',
 		'Wanker',
 		'Whistle',
+
 	];
 
 	var fuckingDescriptions = [
@@ -88,6 +96,11 @@
 		"You've got a face like a <span class='ass'></span>.",
 		"Nothing personal, but you're a real <span class='ass'></span>.",
 		"What a bunch of <span class='ass'></span>s.",
+		"Everytime I see that <span class='ass'></span>, I want them to run into a knife.",
+		"<span class='ass'></span> is the name of your porno.",
+		"Johhny Depp, George Clooney, Leonardo Dicaprio and Al Pacino would call you a <span class='ass'></span> if they had the chance.",
+		"Attention K-Mart shoppers. Would the <span class='ass'></span> in isle 5 please remove their head from their ass.",
+		"If you were in a beauty pagent, your sash would read: Miss <span class='ass'></span>, from North Dakota",
 	];
 
 	function randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions ) {
