@@ -1,0 +1,14 @@
+{
+  "name": "fucking-insult-generator",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-combine-mq": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-csscomb": "latest",
+    "grunt-sass": "latest",
+    "load-grunt-tasks": "latest"
+  }
+}
