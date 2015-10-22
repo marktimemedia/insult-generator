@@ -30,6 +30,7 @@
 		'Bagel',
 		'Biscuit',
 		'Blister',
+		'Burger',
 		'Bubble',
 		'Bucket',
 		'Camel',
