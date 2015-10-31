@@ -89,6 +89,7 @@
 		"You've got a face like a <span class='ass'></span>.",
 		"Nothing personal, but you're a real <span class='ass'></span>.",
 		"What a bunch of <span class='ass'></span>s.",
+		"That <span class='ass'></span> is legally dead in 27 states - plus Guam.",
 	];
 
 	function randomUpSomeShit( cussing, fuckAssNoun, fuckingDescriptions ) {
